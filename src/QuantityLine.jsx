@@ -8,8 +8,11 @@ export default function QuantityLine({ categoria, quantitat, onQuantityAdd }) {
   };
 
   const handleAddClick = () => {
-    onQuantityAdd(parseFloat(inputValue));
-    setInputValue("");
+    const amount = parseFloat(inputValue);
+    if (!isNaN(amount) && amount > 0) {
+      onQuantityAdd(amount);
+      setInputValue("");
+    }
   };
 
   return (
