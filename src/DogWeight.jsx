@@ -4,7 +4,7 @@ export default function DogWeight({ weight, onWeightChange }) {
   return (
     <>
       <div className="flex justify-between max-w-full overflow-hidden">
-        <label htmlFor="dogWeight">❯ Pes de l'animal</label>
+        <label htmlFor="dogWeight">❯ Quant pesa?</label>
         <div className="flex items-center max-w-full">
           <input
             id="dogWeight"

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Food4Weeks from "./Food4Weeks";
 import DogWeight from "./DogWeight";
+import Calculadora from "./Calculadora";
 
 function App() {
   const [selectedWeeks, setSelectedWeeks] = useState(null);
@@ -19,7 +20,7 @@ function App() {
   return (
     <>
       <header className="text-center">
-        <h1 className="text-4xl">Calculadora setmanal BARF</h1>
+        <h1 className="text-4xl">Calculadora compra BARF</h1>
       </header>
       <div className="px-2">
         <div className=" mt-10">
@@ -27,6 +28,7 @@ function App() {
         </div>
         <Food4Weeks onWeekChange={handleWeekChange} />
       </div>
+      <Calculadora />
     </>
   );
 }
