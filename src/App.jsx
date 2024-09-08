@@ -19,10 +19,12 @@ function App() {
   return (
     <>
       <header className="text-center">
-        <h1 className="text-center text-4xl">Calculadora setmanal BARF</h1>
+        <h1 className="text-4xl">Calculadora setmanal BARF</h1>
       </header>
-      <div>
+      <div className=" mt-10">
         <DogWeight onWeightChange={handleWeightChange} weight={weight} />
+      </div>
+      <div className=" mt-2 flex space-between">
         <Food4Weeks onWeekChange={handleWeekChange} />
       </div>
     </>
