@@ -21,10 +21,10 @@ function App() {
       <header className="text-center">
         <h1 className="text-4xl">Calculadora setmanal BARF</h1>
       </header>
-      <div className=" mt-10">
-        <DogWeight onWeightChange={handleWeightChange} weight={weight} />
-      </div>
-      <div className=" mt-2 flex space-between">
+      <div className="px-2">
+        <div className=" mt-10">
+          <DogWeight onWeightChange={handleWeightChange} weight={weight} />
+        </div>
         <Food4Weeks onWeekChange={handleWeekChange} />
       </div>
     </>
