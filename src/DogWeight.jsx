@@ -9,7 +9,6 @@ export default function DogWeight({ weight, onWeightChange }) {
           <input
             id="dogWeight"
             type="number"
-            defaultValue=""
             value={weight}
             onChange={onWeightChange}
             min="1"
