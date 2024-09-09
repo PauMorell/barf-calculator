@@ -15,12 +15,14 @@ export default function QuantityLine({ categoria, quantitat, onQuantityAdd }) {
     }
   };
 
+  const formattedQuantity = quantitat.toFixed(0);
+
   return (
     <div className="grid grid-cols-4 gap-1 p-1">
       <div className="p-1 text-center">
         <label htmlFor={categoria}>{categoria}</label>
       </div>
-      <div className="p-1 text-center">{quantitat} g</div>
+      <div className="p-1 text-center">{formattedQuantity} g</div>
       <div className="p-1 text-center">
         <input
           id={categoria}
@@ -28,7 +30,7 @@ export default function QuantityLine({ categoria, quantitat, onQuantityAdd }) {
           value={inputValue}
           onChange={handleInputChange}
           min="0"
-          step="0.1"
+          step="1"
         ></input>
       </div>
       <div className="p-1 text-center">
