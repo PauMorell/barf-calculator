@@ -53,7 +53,7 @@ function App() {
   return (
     <>
       <header className="flex text-center items-center">
-        <img src="public/BRUSKINI.png" width="130px" alt="" />
+        <img src="/BRUSKINI.png" width="130px" alt="" />
         <h1 className="text-4xl font-semibold">Calculadora compra BARF</h1>
       </header>
       <div className="px-5 py-4 my-6 mx-1 border-solid rounded-xl border border-white/20">

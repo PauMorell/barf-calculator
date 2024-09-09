@@ -5,7 +5,7 @@ export default function QuantityForm({ quantities, onQuantityChange }) {
   return (
     <div className="mt-12 ml-8">
       <div className="flex items-center">
-        <img src="public/muslo-de-pollo.png" width="30px"></img>
+        <img src="/muslo-de-pollo.png" width="30px"></img>
 
         <QuantityLine
           categoria="HC"
@@ -14,7 +14,7 @@ export default function QuantityForm({ quantities, onQuantityChange }) {
         />
       </div>
       <div className="flex items-center">
-        <img src="public/carne.png" width="28px"></img>
+        <img src="/carne.png" width="28px"></img>
         <QuantityLine
           categoria="CARN"
           quantitat={quantities.C}
@@ -22,7 +22,7 @@ export default function QuantityForm({ quantities, onQuantityChange }) {
         />
       </div>
       <div className="flex items-center">
-        <img src="public/kidney_2864552.png" width="30px"></img>
+        <img src="/kidney_2864552.png" width="30px"></img>
         <QuantityLine
           categoria="VÍSC."
           quantitat={quantities.VISC}
@@ -30,7 +30,7 @@ export default function QuantityForm({ quantities, onQuantityChange }) {
         />
       </div>
       <div className="flex items-center">
-        <img src="public/carrot.png" width="30px"></img>
+        <img src="/carrot.png" width="30px"></img>
         <QuantityLine
           categoria="VERD."
           quantitat={quantities.VERD}
