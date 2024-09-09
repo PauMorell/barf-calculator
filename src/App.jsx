@@ -52,11 +52,12 @@ function App() {
 
   return (
     <>
-      <header className="text-center">
-        <h1 className="text-4xl">Calculadora compra BARF</h1>
+      <header className="flex text-center items-center">
+        <img src="public/BRUSKINI.png" width="130px" alt="" />
+        <h1 className="text-4xl font-semibold">Calculadora compra BARF</h1>
       </header>
-      <div className="px-2">
-        <div className="mt-10">
+      <div className="px-5 py-4 my-6 mx-1 border-solid rounded-xl border border-white/20">
+        <div>
           <DogWeight onWeightChange={handleWeightChange} weight={weight} />
         </div>
         <Food4Weeks onWeekChange={handleWeekChange} />

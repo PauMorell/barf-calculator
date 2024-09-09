@@ -4,15 +4,15 @@ export default function Food4Weeks({ onWeekChange, selectedWeeks }) {
   return (
     <>
       <div className="flex justify-between items-center pt-2">
-        <label htmlFor="weeksNumber">❯ Nº setmanes de menjar?</label>
+        <label htmlFor="weeksNumber">❯ Nº setmanes?</label>
 
         <select
           onChange={onWeekChange}
           value={selectedWeeks || ""}
           id="weeksNumber"
-          className="w-max mt-2 p-2 border rounded-md"
+          className="w-max mt-2 p-1 border rounded-md"
         >
-          <option value="">Nº setmanes</option>
+          <option value="">Selecciona</option>
           <option value="1">1 setmana</option>
           <option value="2">2 setmanes</option>
           <option value="3">3 setmanes</option>

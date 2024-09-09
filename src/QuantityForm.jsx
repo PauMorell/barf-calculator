@@ -3,27 +3,40 @@ import QuantityLine from "./QuantityLine";
 
 export default function QuantityForm({ quantities, onQuantityChange }) {
   return (
-    <div>
-      <QuantityLine
-        categoria="Ossos carnosos"
-        quantitat={quantities.HC}
-        onQuantityAdd={(amount) => onQuantityChange("HC", amount)}
-      />
-      <QuantityLine
-        categoria="Carn"
-        quantitat={quantities.C}
-        onQuantityAdd={(amount) => onQuantityChange("C", amount)}
-      />
-      <QuantityLine
-        categoria="Vísceres"
-        quantitat={quantities.VISC}
-        onQuantityAdd={(amount) => onQuantityChange("VISC", amount)}
-      />
-      <QuantityLine
-        categoria="Verdures"
-        quantitat={quantities.VERD}
-        onQuantityAdd={(amount) => onQuantityChange("VERD", amount)}
-      />
+    <div className="mt-12 ml-8">
+      <div className="flex items-center">
+        <img src="public/muslo-de-pollo.png" width="30px"></img>
+
+        <QuantityLine
+          categoria="HC"
+          quantitat={quantities.HC}
+          onQuantityAdd={(amount) => onQuantityChange("HC", amount)}
+        />
+      </div>
+      <div className="flex items-center">
+        <img src="public/carne.png" width="28px"></img>
+        <QuantityLine
+          categoria="CARN"
+          quantitat={quantities.C}
+          onQuantityAdd={(amount) => onQuantityChange("C", amount)}
+        />
+      </div>
+      <div className="flex items-center">
+        <img src="public/kidney_2864552.png" width="30px"></img>
+        <QuantityLine
+          categoria="VÍSC."
+          quantitat={quantities.VISC}
+          onQuantityAdd={(amount) => onQuantityChange("VISC", amount)}
+        />
+      </div>
+      <div className="flex items-center">
+        <img src="public/carrot.png" width="30px"></img>
+        <QuantityLine
+          categoria="VERD."
+          quantitat={quantities.VERD}
+          onQuantityAdd={(amount) => onQuantityChange("VERD", amount)}
+        />
+      </div>
     </div>
   );
 }
