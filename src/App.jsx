@@ -21,7 +21,10 @@ function App() {
     setWeight(event.target.value);
   };
 
-  const dailyTotal = weight * 0.027 * 1000;
+  const dailyTotal = weight * 0.0275 * 1000;
+
+  console.log(dailyTotal);
+
   const HC = dailyTotal * 0.45;
   const C = dailyTotal * 0.3;
   const VISC = dailyTotal * 0.15;

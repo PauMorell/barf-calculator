@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Food4Weeks({ onWeekChange }) {
+export default function Food4Weeks({ onWeekChange, selectedWeeks }) {
   return (
     <>
       <div className="flex justify-between items-center pt-2">
@@ -8,7 +8,7 @@ export default function Food4Weeks({ onWeekChange }) {
 
         <select
           onChange={onWeekChange}
-          defaultValue=""
+          value={selectedWeeks || ""}
           id="weeksNumber"
           className="w-max mt-2 p-2 border rounded-md"
         >
